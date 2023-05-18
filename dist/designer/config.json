@@ -1,0 +1,7 @@
+{
+    "environment": "development",
+    "managementApiUrl": "https://management.epl-apim-dev.privatelink.azurewebsites.net",
+    "managementApiAccessToken": "SharedAccessSignature integration&20230616035741&rtJsCBIpMv0UnzTY4pdK2qCNZhO8ccjBPytCH7cT+xdckBPjCHUMSbAThd7wg1sHNT0HljtRvCSqvlrOaLXoCg==",
+    "backendUrl": "https://api.epl-apim-dev.privatelink.azurewebsites.net",
+    "useHipCaptcha": false
+}
