@@ -53,4 +53,4 @@ jobs:
           app-name: 'self-hosted-developer-portal-dev'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CFDFCC9ABBA34D0AA3DD6AB0B9C6139A }}
-          package: ./dist/designer
+          package: .
