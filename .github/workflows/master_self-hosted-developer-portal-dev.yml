@@ -54,3 +54,6 @@ jobs:
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_42A99A5554D045B8A82869C58D4D52C6 }}
           package: .
+          app_location: "/"
+          api_location: ""
+          output_location: "dist/designer"
