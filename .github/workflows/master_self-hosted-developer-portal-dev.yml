@@ -52,7 +52,7 @@ jobs:
         with:
           app-name: 'self-hosted-developer-portal-dev'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_42A99A5554D045B8A82869C58D4D52C6 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C67670E5270A4D249576CCFFF40D87AB }}
           package: .
           app_location: "/"
           api_location: ""
