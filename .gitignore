@@ -1,6 +1,7 @@
 .history/
 .vs/
 .vscode/
+dist/
 .DS_Store
 node_modules/
 src/config.design.json

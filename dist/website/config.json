@@ -1,5 +1,0 @@
-{
-    "environment": "runtime",
-    "managementApiUrl": "https://management.epl-apim-dev.privatelink.azurewebsites.net",
-    "backendUrl": "https://api.epl-apim-dev.privatelink.azurewebsites.net"
-}
