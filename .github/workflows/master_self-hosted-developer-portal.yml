@@ -23,16 +23,15 @@ jobs:
 
       - name: npm install, build, and test
         run: |
-          set NODE_OPTIONS=--max_old_space_size=4096
           npm install
           npm run build --if-present
           npm run test --if-present
-
+      
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
           name: node-app
-          path: dist/designer
+          path: .
 
   deploy:
     runs-on: ubuntu-latest
@@ -48,10 +47,10 @@ jobs:
           name: node-app
 
       - name: 'Deploy to Azure Web App'
-        id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
+        id: deploy-to-webapp
         with:
           app-name: 'self-hosted-developer-portal'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_61A22CF67CF2490D88E5719B77D3F0D6 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8490C1BF4D61469EB3D958930F033BAE }}
           package: .
